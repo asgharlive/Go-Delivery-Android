@@ -1,11 +1,14 @@
 package com.androidgroup.godelivery;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +16,7 @@ import java.util.List;
 public class JobsListAdapter extends BaseAdapter {
 
     Context context;
+    String[] data;
     private static LayoutInflater inflater = null;
 
     List<String> jobIDsList = new ArrayList<String>();
@@ -64,6 +68,7 @@ public class JobsListAdapter extends BaseAdapter {
         View vi = convertView;
         if (vi == null)
             vi = inflater.inflate(R.layout.row, null);
+        
 
 
         return vi;
