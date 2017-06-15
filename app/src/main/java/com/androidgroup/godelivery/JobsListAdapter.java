@@ -69,8 +69,18 @@ public class JobsListAdapter extends BaseAdapter {
         if (vi == null)
             vi = inflater.inflate(R.layout.row, null);
 
-        
 
+
+        Double distanceDoubleFormat = Double.valueOf(distanceList.get(position));
+        double roundDistance = (double) Math.round(distanceDoubleFormat * 100.0) / 100.0;
+        String roundedDistance = String.valueOf(roundDistance);
+
+        Double amountDoubleFormat = Double.valueOf(rateList.get(position));
+        double roundAmount = (double) Math.round(amountDoubleFormat * 100.0) / 100.0;
+        String roundedAmount = String.valueOf(roundAmount);
+
+
+       
 
         return vi;
     }
