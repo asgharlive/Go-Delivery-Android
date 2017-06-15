@@ -68,6 +68,7 @@ public class JobsListAdapter extends BaseAdapter {
         View vi = convertView;
         if (vi == null)
             vi = inflater.inflate(R.layout.row, null);
+
         
 
 
