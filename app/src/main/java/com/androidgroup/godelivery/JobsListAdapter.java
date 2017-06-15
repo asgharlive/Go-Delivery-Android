@@ -80,7 +80,22 @@ public class JobsListAdapter extends BaseAdapter {
         String roundedAmount = String.valueOf(roundAmount);
 
 
-       
+        TextView text1 = (TextView) vi.findViewById(R.id.ListProductNameID);
+        text1.setText(productNamesList.get(position));
+        text1.setTypeface(font);
+        text1.setTextColor(Color.BLACK);
+
+        TextView text2 = (TextView) vi.findViewById(R.id.ListDistanceID);
+        text2.setText(roundedDistance + " KM");
+        text2.setTypeface(font);
+        text2.setTextColor(Color.BLACK);
+
+
+        TextView text3 = (TextView) vi.findViewById(R.id.ListRateID);
+        text3.setText("₦" + roundedAmount);
+        text3.setTypeface(font);
+        text3.setTextColor(Color.BLACK);
+
 
         return vi;
     }
