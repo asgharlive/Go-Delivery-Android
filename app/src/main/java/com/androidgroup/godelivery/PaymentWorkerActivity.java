@@ -143,7 +143,7 @@ public class PaymentWorkerActivity extends Activity {
 
                 String roundedAmount = String.valueOf(rounded);
 
-                paymentDescription.setText("Payment Requested!\n\n" + jobDetails[1] + " is requested to pay you ₦" + roundedAmount +".");
+                paymentDescription.setText("Payment Requested!\n\n" + jobDetails[1] + " is requested to pay you €" + roundedAmount +".");
 
             }
 

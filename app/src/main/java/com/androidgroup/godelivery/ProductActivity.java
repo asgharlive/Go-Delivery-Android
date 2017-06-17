@@ -308,7 +308,7 @@ public class ProductActivity extends FragmentActivity implements  GoogleApiClien
 
 
         distanceTextView.setText("Distance: " + roundedDistance + " KM");
-        rateTextView.setText("Earn: ₦" + roundedAmount);
+        rateTextView.setText("Earn: €" + roundedAmount);
         pickUpAddressTextView.setText(pickUpAddress);
         deliveryAddressTextView.setText(deliveryAddress);
 

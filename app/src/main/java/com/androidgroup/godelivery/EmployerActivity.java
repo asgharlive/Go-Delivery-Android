@@ -339,7 +339,7 @@ public class EmployerActivity extends Activity{
 
 
                     distanceBetweenLocations.setText("Distance" + "\n"+ roundedDistance + " KM");
-                    CostForDistance.setText("Cost" + "\n" + "₦"+ roundedAmount);
+                    CostForDistance.setText("Cost" + "\n" + "€"+ roundedAmount);
 
                 }
 
@@ -476,7 +476,7 @@ public class EmployerActivity extends Activity{
 
 
                     distanceBetweenLocations.setText("Distance" + "\n"+ roundedDistance + " KM");
-                    CostForDistance.setText("Cost" + "\n" + "₦"+ roundedAmount);
+                    CostForDistance.setText("Cost" + "\n" + "€"+ roundedAmount);
 
 
 

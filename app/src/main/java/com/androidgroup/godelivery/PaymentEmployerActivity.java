@@ -145,7 +145,7 @@ public class PaymentEmployerActivity extends Activity {
 
                 String roundedAmount = String.valueOf(rounded);
 
-                paymentDescription.setText("Payment Required!\n\nYou need to pay ₦" + roundedAmount + " to "+ jobDetails[3] + ".");
+                paymentDescription.setText("Payment Required!\n\nYou need to pay €" + roundedAmount + " to "+ jobDetails[3] + ".");
 
 
                 payButton.setVisibility(View.VISIBLE);

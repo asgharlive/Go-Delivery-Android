@@ -85,7 +85,7 @@ public class JobsListAdapter extends BaseAdapter {
         text2.setTextColor(Color.BLACK);
 
         TextView text3 = (TextView) vi.findViewById(R.id.ListRateID);
-        text3.setText("₦" + roundedAmount);
+        text3.setText("€" + roundedAmount);
         text3.setTypeface(font);
         text3.setTextColor(Color.BLACK);
 

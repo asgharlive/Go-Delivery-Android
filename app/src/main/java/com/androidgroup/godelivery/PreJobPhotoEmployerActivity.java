@@ -239,7 +239,7 @@ public class PreJobPhotoEmployerActivity extends Activity {
         jobTitleTextView.setText("Job Title\n" + jobDetails[9]);
 
         distanceTextView.setText("Distance\n" + roundedDistance + " KM");
-        rateTextView.setText("Cost\n₦" + roundedAmount);
+        rateTextView.setText("Cost\n€" + roundedAmount);
         weightTextView.setText("Weight\n" + jobDetails[10] + " KG");
         dimensionsTextView.setText("Size/Dimension (LxWxH)\n" + jobDetails[11] + " inches");
 
