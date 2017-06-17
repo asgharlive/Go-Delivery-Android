@@ -38,6 +38,37 @@ import java.net.URL;
 
 public class PreJobPhotoEmployerActivity extends Activity {
 
+    AlertDialog alertDw;
+    AlertDialog.Builder builder;
+
+
+    String JobID = null;
+    String jobFileName = null;
+
+    String[] jobDetails = new String[22];
+
+    private Uri fileUri;
+
+    ImageView imageView;
+
+    String ba1 = "";
+
+    ProgressBar progressBar;
+
+
+    Bitmap photo = null;
+
+    TextView jobStatusTitle;
+    TextView jobStatus;
+
+    TextView textDescription;
+
+    Button approvePhotoButton;
+    Button jobDetailsButton;
+
+    Button LogOutButton;
+
+    Button RefreshButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +78,7 @@ public class PreJobPhotoEmployerActivity extends Activity {
 
 
 
-        
+
 
     }
 
