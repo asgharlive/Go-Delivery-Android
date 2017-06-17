@@ -27,6 +27,20 @@ import java.net.URL;
 
 public class PaymentEmployerActivity extends Activity {
 
+    String jobID = null;
+    String jobFileName = null;
+
+    TextView paymentDescription;
+    TextView paymentTitle;
+
+    Button LogOutButton;
+    Button RefreshButton;
+
+    Button payButton;
+
+    String[] jobDetails = new String[22];
+
+    String amount = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
