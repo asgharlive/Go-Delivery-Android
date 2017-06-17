@@ -745,6 +745,7 @@ public class PreJobPhotoWorkerActivity extends Activity {
 
 
 
+        // this java class file is finished after debuging ;horay
 
 
     }
