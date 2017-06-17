@@ -727,7 +727,7 @@ public class PostJobPhotoWorkerActivity extends Activity {
         editor.apply();
     }
 
-
+//done all the code 
     public void RefreshClicked(View v)
     {
         Intent intent = new Intent(PostJobPhotoWorkerActivity.this, AlreadyLoggedInActivity.class);
