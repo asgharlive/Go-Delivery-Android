@@ -1,6 +1,5 @@
 package com.androidgroup.godelivery;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -9,12 +8,10 @@ import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -37,7 +34,6 @@ public class WorkerActivity extends Activity {
     ListView jobsListing;
     ArrayAdapter<String> stringArrayAdapter;
     JobsListAdapter myJobsListAdapter;
-
 
     List<String> jobIDsList = new ArrayList<String>();
 
@@ -131,9 +127,6 @@ public class WorkerActivity extends Activity {
         new RetrievePerKilometerRate().execute("http://192.168.0.185/AndroidApps/GoDelivery/RatePerKilometer.txt");
 
 
-
-
-
         jobsListing = (ListView) findViewById(R.id.jobsListingsID);
         jobsListing.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -179,17 +172,9 @@ public class WorkerActivity extends Activity {
 
 
 
-
-
         myJobsListAdapter = new JobsListAdapter(this, productNamesList, distanceList, rateList);
 
         jobsListing.setAdapter(myJobsListAdapter);
-
-
-
-
-
-
 
 
 
@@ -246,13 +231,6 @@ public class WorkerActivity extends Activity {
 
                 Toast.makeText(getApplicationContext(), "Network Connection Problem. Make sure that your internet is properly connected", Toast.LENGTH_SHORT).show();
             }
-
-
-
-
-
-
-
 
 
 
@@ -823,7 +801,6 @@ public class WorkerActivity extends Activity {
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         loginEmailString = prefs.getString("GoDeliveryLoginEmail", null);
-        
 
     }
 

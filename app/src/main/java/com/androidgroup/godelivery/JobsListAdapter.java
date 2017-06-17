@@ -8,10 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class JobsListAdapter extends BaseAdapter {
 
@@ -25,10 +23,7 @@ public class JobsListAdapter extends BaseAdapter {
     List<String> distanceList = new ArrayList<String>();
     List<String> rateList = new ArrayList<String>();
 
-
     Typeface font;
-
-
 
     public JobsListAdapter(Context context, List<String> productNamesList, List<String> distanceList, List<String> rateList) {
         // UDO Auto-generated constructor stub
@@ -79,7 +74,6 @@ public class JobsListAdapter extends BaseAdapter {
         double roundAmount = (double) Math.round(amountDoubleFormat * 100.0) / 100.0;
         String roundedAmount = String.valueOf(roundAmount);
 
-
         TextView text1 = (TextView) vi.findViewById(R.id.ListProductNameID);
         text1.setText(productNamesList.get(position));
         text1.setTypeface(font);
@@ -89,7 +83,6 @@ public class JobsListAdapter extends BaseAdapter {
         text2.setText(roundedDistance + " KM");
         text2.setTypeface(font);
         text2.setTextColor(Color.BLACK);
-
 
         TextView text3 = (TextView) vi.findViewById(R.id.ListRateID);
         text3.setText("₦" + roundedAmount);

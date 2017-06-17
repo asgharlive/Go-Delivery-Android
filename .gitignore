@@ -7,3 +7,6 @@
 /build
 /captures
 .externalNativeBuild
+app/src/main/java/com/androidgroup/godelivery/AlreadyLoggedInActivity.java
+app/src/main/java/com/androidgroup/godelivery/AlreadyLoggedInActivity.java
+*.java
