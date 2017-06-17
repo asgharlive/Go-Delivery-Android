@@ -42,6 +42,40 @@ import java.net.URL;
 
 public class PostJobPhotoWorkerActivity extends Activity {
 
+    String JobID = null;
+
+    String jobFileName = null;
+
+    String[] jobDetails = new String[22];
+
+
+    AlertDialog alertDw;
+    AlertDialog.Builder builder;
+
+    private Uri fileUri;
+
+    ImageView imageView;
+
+    String ba1 = "";
+
+    ProgressBar progressBar;
+
+    Bitmap photo =  null;
+
+    TextView jobStatus;
+
+    TextView textDescription;
+
+    Button postJobPhotoButton;
+
+    TextView jobStatusTitle;
+
+    Button jobDetailsButton;
+
+    Button LogOutButton;
+
+    Button RefreshButton;
+
 
 
     @Override
@@ -50,7 +84,7 @@ public class PostJobPhotoWorkerActivity extends Activity {
 
         setContentView(R.layout.post_photo_worker);
 
-       
+
     }
 
 
