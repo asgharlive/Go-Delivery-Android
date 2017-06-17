@@ -37,6 +37,39 @@ import java.net.URL;
 
 public class PostJobPhotoEmployerActivity extends Activity {
 
+    AlertDialog alertDw;
+    AlertDialog.Builder builder;
+
+    String JobID = null;
+    String jobFileName = null;
+
+    String[] jobDetails = new String[22];
+
+    private Uri fileUri;
+
+    ImageView imageView;
+
+    String ba1 = "";
+
+    ProgressBar progressBar;
+
+
+    Bitmap photo = null;
+
+    TextView jobStatus;
+
+    TextView textDescription;
+
+    Button approvePhotoButton;
+
+    TextView jobStatusTitle;
+
+    Button jobDetailsButton;
+    Button LogOutButton;
+
+    Button RefreshButton;
+
+
 
 
 
@@ -45,7 +78,7 @@ public class PostJobPhotoEmployerActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.post_photo_employer);
 
-       
+
     }
 
 
