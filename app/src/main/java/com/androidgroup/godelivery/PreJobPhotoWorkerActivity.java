@@ -44,13 +44,56 @@ public class PreJobPhotoWorkerActivity extends Activity {
 
 
 
+    String JobID = null;
+
+    String jobFileName = null;
+
+    String[] jobDetails = new String[22];
+
+
+
+
+
+    AlertDialog alertDw;
+    AlertDialog.Builder builder;
+
+
+    private Uri fileUri;
+
+    ImageView imageView;
+
+    String ba1 = "";
+
+    ProgressBar progressBar;
+
+
+
+    Bitmap photo =  null;
+
+    TextView jobStatus;
+
+    TextView textDescription;
+
+    Button startJobButton;
+
+
+    TextView jobStatusTitle;
+
+    Button jobDetailsButton;
+
+    Button LogOutButton;
+
+    Button RefreshButton;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.pre_photo_worker);
 
-        
+
+
     }
 
 
