@@ -28,11 +28,8 @@ import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.jar.Attributes;
 
-/**
- * Created by shah on 05/04/2016.
- */
+
 public class ProfileActivity extends Activity {
 
 
