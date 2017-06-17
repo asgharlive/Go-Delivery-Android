@@ -1428,7 +1428,6 @@ public class WokerMapActivity extends FragmentActivity implements ConnectionCall
         startActivity(intent);
 
         finish();
-
     }
 
     @Override

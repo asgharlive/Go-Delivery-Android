@@ -34,7 +34,6 @@ public class JobsListAdapter extends BaseAdapter {
         font = Typeface.createFromAsset(context.getAssets(), "FancyFont_1.ttf");
 
 
-
         //this.jobIDsList = jobIDsList;
 
         inflater = (LayoutInflater) context

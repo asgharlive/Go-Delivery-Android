@@ -30,11 +30,11 @@ import java.util.List;
 
 public class WorkerActivity extends Activity {
 
-
     ListView jobsListing;
     ArrayAdapter<String> stringArrayAdapter;
     JobsListAdapter myJobsListAdapter;
 
+    
     List<String> jobIDsList = new ArrayList<String>();
 
     List<String> productNamesList = new ArrayList<String>();

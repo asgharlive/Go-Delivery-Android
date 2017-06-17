@@ -160,7 +160,6 @@ public class ProductActivity extends FragmentActivity implements  GoogleApiClien
      * Start Updates and Stop Updates buttons.
      */
     protected Boolean mRequestingLocationUpdates;
-
     /**
      * Time when the location was updated represented as a String.
      */

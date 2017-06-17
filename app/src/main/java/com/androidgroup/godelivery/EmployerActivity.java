@@ -76,7 +76,6 @@ public class EmployerActivity extends Activity{
     TextView recipientProfile;
 
 
-
     EditText productNameField;
 
     EditText productWeightField;
@@ -154,8 +153,6 @@ public class EmployerActivity extends Activity{
         recipientProfile = (TextView) findViewById(R.id.ClientrecipientProfileLabelID);
 
         productName = (TextView) findViewById(R.id.productNameTextID);
-
-
 
         distanceBetweenLocations = (TextView) findViewById(R.id.distanceBetweenLocationID);
         CostForDistance = (TextView) findViewById(R.id.CostForDistanceID);
