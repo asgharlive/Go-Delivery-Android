@@ -8,7 +8,6 @@ import android.preference.PreferenceManager;
 
 public class AlreadyLoggedInActivity extends Activity {
 
-
     String loginEmailString = null;
 
     @Override
@@ -41,9 +40,6 @@ public class AlreadyLoggedInActivity extends Activity {
 
 
         }
-
-
-
     }
 
     public void LoadLoginEmail()
