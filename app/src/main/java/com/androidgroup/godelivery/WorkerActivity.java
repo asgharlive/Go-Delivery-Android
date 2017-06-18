@@ -123,7 +123,7 @@ public class WorkerActivity extends Activity {
         dataValues[17] = "";
 
 
-        new RetrievePerKilometerRate().execute("http://192.168.0.185/AndroidApps/GoDelivery/RatePerKilometer.txt");
+        new RetrievePerKilometerRate().execute("http://www.lushapps.com/AndroidApps/GoDelivery/RatePerKilometer.txt");
 
 
         jobsListing = (ListView) findViewById(R.id.jobsListingsID);
@@ -647,7 +647,7 @@ public class WorkerActivity extends Activity {
 
 
 
-                new CheckIfUserAlreadyExists().execute("http://192.168.0.185/AndroidApps/GoDelivery/JobsListings/JobsListings.txt");
+                new CheckIfUserAlreadyExists().execute("http://www.lushapps.com/AndroidApps/GoDelivery/JobsListings/JobsListings.txt");
 
             }
 
@@ -774,7 +774,7 @@ public class WorkerActivity extends Activity {
         recipientPersonLongitudesList.clear();
 
 
-        //  new CheckIfUserAlreadyExists().execute("http://192.168.0.185/androidApps/GoDelivery/JobsListings/JobsListings.txt");
+        //  new CheckIfUserAlreadyExists().execute("http://www.lushapps.com/androidApps/GoDelivery/JobsListings/JobsListings.txt");
     }
 
     @Override

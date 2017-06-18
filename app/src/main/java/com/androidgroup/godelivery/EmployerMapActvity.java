@@ -236,7 +236,7 @@ public class EmployerMapActvity extends FragmentActivity implements
         jobFileName = (jobID + ".txt");
 
 
-        new FetchAcceptedJobDetails().execute("http://192.168.0.185/AndroidApps/GoDelivery/AcceptedJobs/" + jobFileName);
+        new FetchAcceptedJobDetails().execute("http://www.lushapps.com/AndroidApps/GoDelivery/AcceptedJobs/" + jobFileName);
 
 
 
@@ -537,8 +537,8 @@ public class EmployerMapActvity extends FragmentActivity implements
 
 
 
-        jobSeekerNameTextView.setText("Job Seeker Name\n" + jobDetails[3]);
-        jobSeekerContactNoTextView.setText("Job Seeker Contact Number\n" + jobDetails[6]);
+        jobSeekerNameTextView.setText("Worker Name\n" + jobDetails[3]);
+        jobSeekerContactNoTextView.setText("Worker Contact Number\n" + jobDetails[6]);
 
 
         pickUpAddressTextView.setText("Pick Up Address\n" + jobDetails[14]);
@@ -782,7 +782,7 @@ public class EmployerMapActvity extends FragmentActivity implements
 
 
 
-                new FetchLocationDetails().execute("http://192.168.0.185/AndroidApps/GoDelivery/JobsLocationUpdates/" + jobFileName);
+                new FetchLocationDetails().execute("http://www.lushapps.com/AndroidApps/GoDelivery/JobsLocationUpdates/" + jobFileName);
             }
         }.start();
 

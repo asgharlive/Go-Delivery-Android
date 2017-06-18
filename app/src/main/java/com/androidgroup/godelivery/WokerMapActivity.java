@@ -298,7 +298,7 @@ public class WokerMapActivity extends FragmentActivity implements ConnectionCall
         jobFileName = (jobID + ".txt");
 
 
-        new FetchAcceptedJobDetails().execute("http://192.168.0.185/AndroidApps/GoDelivery/AcceptedJobs/" + jobFileName);
+        new FetchAcceptedJobDetails().execute("http://www.lushapps.com/AndroidApps/GoDelivery/AcceptedJobs/" + jobFileName);
 
 
 
@@ -591,8 +591,8 @@ public class WokerMapActivity extends FragmentActivity implements ConnectionCall
         dimensionsTextView.setText("Size/Dimension (LxWxH)\n" + jobDetails[11] + " inches");
 
 
-        jobCreaterNameTextView.setText("Job Creater Name\n" + jobDetails[1]);
-        jobCreaterContactNoTextView.setText("Job Creater Contact Number\n" + jobDetails[5]);
+        jobCreaterNameTextView.setText("Employer Name\n" + jobDetails[1]);
+        jobCreaterContactNoTextView.setText("Employer Contact Number\n" + jobDetails[5]);
 
 
         pickUpAddressTextView.setText("Pick Up Address\n" + jobDetails[14]);
@@ -942,7 +942,7 @@ public class WokerMapActivity extends FragmentActivity implements ConnectionCall
 
             mMap.addPolyline(new PolylineOptions().addAll(polylines).width(16).color(Color.BLUE));
 
-            new SendLocationUpdatesToServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/JobsLocationUpdates/LocationUpdates.php");
+            new SendLocationUpdatesToServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/JobsLocationUpdates/LocationUpdates.php");
 
 
 
@@ -968,7 +968,7 @@ public class WokerMapActivity extends FragmentActivity implements ConnectionCall
             public void onFinish() {
 
 
-                new SendLocationUpdatesToServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/JobsLocationUpdates/LocationUpdates.php");
+                new SendLocationUpdatesToServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/JobsLocationUpdates/LocationUpdates.php");
             }
         }.start();
 
@@ -1289,7 +1289,7 @@ public class WokerMapActivity extends FragmentActivity implements ConnectionCall
 
     public void CompleteJobButton(View v)
     {
-        new SignUpFormSubmission().execute("http://192.168.0.185/AndroidApps/GoDelivery/JobsStatus/AcceptedJobsStatus.php");
+        new SignUpFormSubmission().execute("http://www.lushapps.com/AndroidApps/GoDelivery/JobsStatus/AcceptedJobsStatus.php");
     }
 
 

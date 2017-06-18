@@ -107,7 +107,7 @@ public class ProfileActivity extends Activity {
         progressBar = (ProgressBar) findViewById(R.id.ProgressBarID);
 
 
-        new FetchProfileDetailsFromServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/UsersDetails/Profiles/" + loginEmailString +".txt");
+        new FetchProfileDetailsFromServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/UsersDetails/Profiles/" + loginEmailString +".txt");
 
     }
 
@@ -120,7 +120,7 @@ public class ProfileActivity extends Activity {
             name  = NameField.getText().toString();
             phone = PhoneNumberField.getText().toString();
 
-            new UpdateProfileOnServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/UsersDetails/Profiles/UpdateProfile.php");
+            new UpdateProfileOnServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/UsersDetails/Profiles/UpdateProfile.php");
         }
         else
         {
@@ -334,7 +334,7 @@ public class ProfileActivity extends Activity {
             if (result.equals("OK")) {
 
 
-                new FetchProfileDetailsFromServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/UsersDetails/Profiles/" + loginEmailString +".txt");
+                new FetchProfileDetailsFromServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/UsersDetails/Profiles/" + loginEmailString +".txt");
 
 
             }

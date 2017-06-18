@@ -847,7 +847,7 @@ public class ProductActivity extends FragmentActivity implements  GoogleApiClien
 
                         Log.e("Chec" , "1.1");
 
-                        new RemoveJobListing().execute("http://192.168.0.185/AndroidApps/GoDelivery/JobsListings/removeJobListing.php");
+                        new RemoveJobListing().execute("http://www.lushapps.com/AndroidApps/GoDelivery/JobsListings/removeJobListing.php");
                     }
 
 
@@ -923,7 +923,7 @@ public class ProductActivity extends FragmentActivity implements  GoogleApiClien
             complexAcceptedJobDetailsString = jobID + separater + jobOwnerName + separater + jobOwnerEmail + separater  + JobSeekerNameString + separater + JobSeekerEmailString + separater + jobOwnerContantNumber + separater + jobSeekerContactNumberString + separater + distance + separater + rate + separater + productName + separater + productWeight + separater + productSize + separater + pickUpPersonName + separater + pickUpPersonContactNumber + separater + pickUpAddress + separater + pickUpLatitude + separater + pickUpLongitude + separater + deliveryPersonName + separater + deliveryPersonContactNumber + separater + deliveryAddress + separater + deliveryLatitude + separater + deliveryLongitude;
             JobIDFileName = (jobID + ".txt");
 
-            new RegisterAcceptedJob().execute("http://192.168.0.185/AndroidApps/GoDelivery/AcceptedJobs/RegisterAcceptedJobs.php");
+            new RegisterAcceptedJob().execute("http://www.lushapps.com/AndroidApps/GoDelivery/AcceptedJobs/RegisterAcceptedJobs.php");
 
 
         }
@@ -1011,7 +1011,7 @@ public class ProductActivity extends FragmentActivity implements  GoogleApiClien
             if(result.equals("OK")) {
                 Toast.makeText(getApplicationContext(), "Registered", Toast.LENGTH_SHORT).show();
 
-                new SignUpFormSubmission().execute("http://192.168.0.185/AndroidApps/GoDelivery/JobsStatus/AcceptedJobsStatus.php");
+                new SignUpFormSubmission().execute("http://www.lushapps.com/AndroidApps/GoDelivery/JobsStatus/AcceptedJobsStatus.php");
 
             }
 

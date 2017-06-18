@@ -142,7 +142,7 @@ public class PostJobPhotoWorkerActivity extends Activity {
         jobFileName = (JobID + ".txt");
 
 
-        new FetchAcceptedJobDetails().execute("http://192.168.0.185/AndroidApps/GoDelivery/AcceptedJobs/" + jobFileName);
+        new FetchAcceptedJobDetails().execute("http://www.lushapps.com/AndroidApps/GoDelivery/AcceptedJobs/" + jobFileName);
 
 
     }
@@ -163,7 +163,7 @@ public class PostJobPhotoWorkerActivity extends Activity {
             ba1 =  Base64.encodeToString(ba, Base64.DEFAULT);
 
             // Upload image to server
-            new SendPostJobPhotoToServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/PostJobPhotos/PostJobPhotoUpload.php");
+            new SendPostJobPhotoToServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/PostJobPhotos/PostJobPhotoUpload.php");
 
         }
     }
@@ -268,8 +268,8 @@ public class PostJobPhotoWorkerActivity extends Activity {
 
 
 
-        jobCreaterNameTextView.setText("Job Creater Name\n" + jobDetails[1]);
-        jobCreaterContactNoTextView.setText("Job Creater Contact Number\n" + jobDetails[5]);
+        jobCreaterNameTextView.setText("Employer Name\n" + jobDetails[1]);
+        jobCreaterContactNoTextView.setText("Employer Contact Number\n" + jobDetails[5]);
 
 
         pickUpAddressTextView.setText("Pick Up Address\n" + jobDetails[14]);
@@ -356,7 +356,7 @@ public class PostJobPhotoWorkerActivity extends Activity {
 
             if (result.equals("OK")) {
 
-                new RetrievePostJobPhotoToServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/PostJobPhotos/" + JobID + "-PostPhoto.jpg");
+                new RetrievePostJobPhotoToServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/PostJobPhotos/" + JobID + "-PostPhoto.jpg");
             }
             else
             {
@@ -474,7 +474,7 @@ public class PostJobPhotoWorkerActivity extends Activity {
                     imageView.setImageBitmap(photo);
                     imageView.setVisibility(View.VISIBLE);
                     postJobPhotoButton.setVisibility(View.GONE);
-                    jobStatus.setText("Waiting for Post-Delivery Photo approval by Job Creater");
+                    jobStatus.setText("Waiting for Post-Delivery Photo approval by Employer");
 
                 }
 
@@ -595,7 +595,7 @@ public class PostJobPhotoWorkerActivity extends Activity {
             {
                 jobDetailsButton.setVisibility(View.VISIBLE);
 
-                new RetrievePostJobPhotoToServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/PostJobPhotos/" + JobID + "-PostPhoto.jpg");
+                new RetrievePostJobPhotoToServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/PostJobPhotos/" + JobID + "-PostPhoto.jpg");
 
             }
 

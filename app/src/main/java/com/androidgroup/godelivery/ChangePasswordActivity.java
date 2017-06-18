@@ -96,7 +96,7 @@ public class ChangePasswordActivity extends Activity {
         {
             if (NewPassword.equals(ConfirmPassword))
             {
-                new ChangePasswordOnServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/UsersDetails/EmailsPasswords/UpdatePassword.php");
+                new ChangePasswordOnServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/UsersDetails/EmailsPasswords/UpdatePassword.php");
 
             }
             else

@@ -119,7 +119,7 @@ public class ForgotPasswordActivity extends Activity {
         if(SecretAnswer.length() > 0 && isEmailValid(Email) && NewPassword.length() >= 4 && ConfirmPassword.length() >= 4)
         {
 
-            new VerifySecretAnswerFromServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/UsersDetails/SecurityQuestions/" + Email + ".txt");
+            new VerifySecretAnswerFromServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/UsersDetails/SecurityQuestions/" + Email + ".txt");
 
 
 
@@ -175,7 +175,7 @@ public class ForgotPasswordActivity extends Activity {
 
                     if (NewPassword.equals(ConfirmPassword))
                     {
-                        new ResetPasswordOnServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/UsersDetails/EmailsPasswords/UpdatePassword.php");
+                        new ResetPasswordOnServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/UsersDetails/EmailsPasswords/UpdatePassword.php");
 
                     }
                     else

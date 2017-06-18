@@ -92,7 +92,7 @@ public class PaymentWorkerActivity extends Activity {
 
 
 
-        new GetPaymentStatusFromServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/PaymentsStatus/" + jobID + "-Status.txt");
+        new GetPaymentStatusFromServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/PaymentsStatus/" + jobID + "-Status.txt");
 
 
 
@@ -297,7 +297,7 @@ public class PaymentWorkerActivity extends Activity {
 
                 if (result.equals("OK"))
                 {
-                    paymentDescription.setText("Job Completed!\n\nPayment has been made by the Job Owner.");
+                    paymentDescription.setText("Job Completed!\n\nPayment has been made by the Employer.");
 
                     RemoveJob();
                 }
@@ -305,7 +305,7 @@ public class PaymentWorkerActivity extends Activity {
                 else if (result.equals("NotFound"))
                 {
 
-                    new FetchAcceptedJobDetails().execute("http://192.168.0.185/AndroidApps/GoDelivery/AcceptedJobs/" + jobFileName);
+                    new FetchAcceptedJobDetails().execute("http://www.lushapps.com/AndroidApps/GoDelivery/AcceptedJobs/" + jobFileName);
 
                 }
                 else if (result.equals("NetworkError"))
@@ -419,7 +419,7 @@ public class PaymentWorkerActivity extends Activity {
             public void onFinish() {
 
 
-                new RemoveJobListing().execute("http://192.168.0.185/AndroidApps/GoDelivery/AcceptedJobs/removeJobListing.php");
+                new RemoveJobListing().execute("http://www.lushapps.com/AndroidApps/GoDelivery/AcceptedJobs/removeJobListing.php");
 
             }
         }.start();

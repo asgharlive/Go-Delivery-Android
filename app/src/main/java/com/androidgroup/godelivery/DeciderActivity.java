@@ -59,7 +59,7 @@ public class DeciderActivity extends Activity {
 
         progressBar = (ProgressBar) findViewById(R.id.LoginProgressBarID);
 
-        new GetUserDetails().execute("http://192.168.0.185/AndroidApps/GoDelivery/UsersDetails/Profiles/" + loginEmailString + ".txt");
+        new GetUserDetails().execute("http://www.lushapps.com/AndroidApps/GoDelivery/UsersDetails/Profiles/" + loginEmailString + ".txt");
 
 
 
@@ -106,7 +106,7 @@ public class DeciderActivity extends Activity {
 
                     SaveUserDetails();
 
-                    new CheckForAcceptedJob().execute("http://192.168.0.185/AndroidApps/GoDelivery/AcceptedJobs/AcceptedJobsList.txt");
+                    new CheckForAcceptedJob().execute("http://www.lushapps.com/AndroidApps/GoDelivery/AcceptedJobs/AcceptedJobsList.txt");
                 }
             }
             else
@@ -280,7 +280,7 @@ public class DeciderActivity extends Activity {
 
                 }
 
-                new GetJobStatusFromServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/JobsStatus/" + jobID + "-Status.txt");
+                new GetJobStatusFromServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/JobsStatus/" + jobID + "-Status.txt");
 
 
             }

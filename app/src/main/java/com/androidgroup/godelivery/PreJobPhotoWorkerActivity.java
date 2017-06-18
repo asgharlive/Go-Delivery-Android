@@ -147,7 +147,7 @@ public class PreJobPhotoWorkerActivity extends Activity {
 
         jobFileName = (JobID + ".txt");
 
-        new FetchAcceptedJobDetails().execute("http://192.168.0.185/AndroidApps/GoDelivery/AcceptedJobs/" + jobFileName);
+        new FetchAcceptedJobDetails().execute("http://www.lushapps.com/AndroidApps/GoDelivery/AcceptedJobs/" + jobFileName);
 
     }
 
@@ -166,7 +166,7 @@ public class PreJobPhotoWorkerActivity extends Activity {
             ba1 =  Base64.encodeToString(ba, Base64.DEFAULT);
 
             // Upload image to server
-            new SendPreJobPhotoToServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/PreJobPhotos/PreJobPhotoUpload.php");
+            new SendPreJobPhotoToServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/PreJobPhotos/PreJobPhotoUpload.php");
 
 
         }
@@ -276,8 +276,8 @@ public class PreJobPhotoWorkerActivity extends Activity {
 
 
 
-        jobCreaterNameTextView.setText("Job Creater Name\n" + jobDetails[1]);
-        jobCreaterContactNoTextView.setText("Job Creater Contact Number\n" + jobDetails[5]);
+        jobCreaterNameTextView.setText("Employer Name\n" + jobDetails[1]);
+        jobCreaterContactNoTextView.setText("Employer Contact Number\n" + jobDetails[5]);
 
 
         pickUpAddressTextView.setText("Pick Up Address\n" + jobDetails[14]);
@@ -365,7 +365,7 @@ public class PreJobPhotoWorkerActivity extends Activity {
 
             if (result.equals("OK")) {
 
-                new RetrievePreJobPhotoToServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/PreJobPhotos/" + JobID + "-PrePhoto.jpg");
+                new RetrievePreJobPhotoToServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/PreJobPhotos/" + JobID + "-PrePhoto.jpg");
             }
             else
             {
@@ -483,7 +483,7 @@ public class PreJobPhotoWorkerActivity extends Activity {
                     imageView.setImageBitmap(photo);
                     imageView.setVisibility(View.VISIBLE);
                     startJobButton.setVisibility(View.GONE);
-                    jobStatus.setText("Waiting for Pre-Job Photo approval by Job Creater");
+                    jobStatus.setText("Waiting for Pre-Job Photo approval by Employer");
 
                 }
 
@@ -607,7 +607,7 @@ public class PreJobPhotoWorkerActivity extends Activity {
 
                 jobDetailsButton.setVisibility(View.VISIBLE);
 
-                new RetrievePreJobPhotoToServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/PreJobPhotos/" + JobID + "-PrePhoto.jpg");
+                new RetrievePreJobPhotoToServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/PreJobPhotos/" + JobID + "-PrePhoto.jpg");
 
             }
 

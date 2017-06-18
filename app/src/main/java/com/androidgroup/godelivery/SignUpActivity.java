@@ -127,7 +127,7 @@ public class SignUpActivity extends Activity {
         if (name.length() != 0 && isEmailValid(email) && password.length() >= 4 && phone.length() >= 3  && securityAnswer.length() > 1)
         {
 
-            new CheckIfEmailIsAlreadyExists().execute("http://192.168.0.185/AndroidApps/GoDelivery/UsersDetails/EmailsPasswords/EmailsList.txt");
+            new CheckIfEmailIsAlreadyExists().execute("http://www.lushapps.com/AndroidApps/GoDelivery/UsersDetails/EmailsPasswords/EmailsList.txt");
         }
         else if (name.length() <= 0)
         {
@@ -308,7 +308,7 @@ public class SignUpActivity extends Activity {
                     Toast.makeText(SignUpActivity.this, "This email is already registered!", Toast.LENGTH_SHORT).show();
                 } else {
 
-                    new SignUpFormSubmission().execute("http://192.168.0.185/AndroidApps/GoDelivery/UsersDetails/Registration.php");
+                    new SignUpFormSubmission().execute("http://www.lushapps.com/AndroidApps/GoDelivery/UsersDetails/Registration.php");
                 }
             }
 

@@ -127,7 +127,7 @@ public class PostJobPhotoEmployerActivity extends Activity {
         jobFileName = (JobID + ".txt");
 
 
-        new FetchAcceptedJobDetails().execute("http://192.168.0.185/AndroidApps/GoDelivery/AcceptedJobs/" + jobFileName);
+        new FetchAcceptedJobDetails().execute("http://www.lushapps.com/AndroidApps/GoDelivery/AcceptedJobs/" + jobFileName);
 
 
 
@@ -236,8 +236,8 @@ public class PostJobPhotoEmployerActivity extends Activity {
 
 
 
-        jobSeekerNameTextView.setText("Job Seeker Name\n" + jobDetails[3]);
-        jobSeekerContactNoTextView.setText("Job Seeker Contact Number\n" + jobDetails[6]);
+        jobSeekerNameTextView.setText("Worker Name\n" + jobDetails[3]);
+        jobSeekerContactNoTextView.setText("Worker Contact Number\n" + jobDetails[6]);
 
 
         pickUpAddressTextView.setText("Pick Up Address\n" + jobDetails[14]);
@@ -277,7 +277,7 @@ public class PostJobPhotoEmployerActivity extends Activity {
     public void startJobPostPhotoCreaterButton(View v) {
 
 
-        new SignUpFormSubmission().execute("http://192.168.0.185/AndroidApps/GoDelivery/JobsStatus/AcceptedJobsStatus.php");
+        new SignUpFormSubmission().execute("http://www.lushapps.com/AndroidApps/GoDelivery/JobsStatus/AcceptedJobsStatus.php");
 
     }
 
@@ -543,7 +543,7 @@ public class PostJobPhotoEmployerActivity extends Activity {
             {
                 jobDetailsButton.setVisibility(View.VISIBLE);
 
-                new RetrievePostJobPhotoFromServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/PostJobPhotos/" + JobID + "-PostPhoto.jpg");
+                new RetrievePostJobPhotoFromServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/PostJobPhotos/" + JobID + "-PostPhoto.jpg");
 
             }
 

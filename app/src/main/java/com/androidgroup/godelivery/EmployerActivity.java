@@ -254,7 +254,7 @@ public class EmployerActivity extends Activity{
         recipientLocationButton.setTypeface(font);
         recipientLocationButton.setTextColor(Color.WHITE);
 
-        new CheckIFUsernameAlreadyExists().execute("http://192.168.0.185/AndroidApps/GoDelivery/RatePerKilometer.txt");
+        new CheckIFUsernameAlreadyExists().execute("http://www.lushapps.com/AndroidApps/GoDelivery/RatePerKilometer.txt");
 
     }
 
@@ -383,7 +383,7 @@ public class EmployerActivity extends Activity{
             ComplexJobListingString = JobIDString + stringIdentifier + jobCreaterName + stringIdentifier + loginEmailString + stringIdentifier + jobCreaterContactNumberString + stringIdentifier + productNameString + stringIdentifier + productWeightString + stringIdentifier + productSizeString + stringIdentifier + distanceString + stringIdentifier + pickUpPersonNameString + stringIdentifier + pickUpPersonContactNumberString + stringIdentifier + pickUpPersonAddressString + stringIdentifier + pickUpPersonLatitudeString + stringIdentifier + pickUpPersonLongitudeString + stringIdentifier + recipientNameString + stringIdentifier + recipientContactNumberString + stringIdentifier + recipientAddressString + stringIdentifier + recipientLatitudeString + stringIdentifier + recipientLongitudeString;
 
 
-            new SignUpFormSubmission().execute("http://192.168.0.185/AndroidApps/GoDelivery/JobsListings/CreateJobListing.php");
+            new SignUpFormSubmission().execute("http://www.lushapps.com/AndroidApps/GoDelivery/JobsListings/CreateJobListing.php");
 
             //Toast.makeText(ClientActivity.this, "Job Created Successfully" ,Toast.LENGTH_SHORT).show();
 

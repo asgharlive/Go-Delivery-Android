@@ -110,7 +110,7 @@ public class LoginActivity extends Activity {
 
         if (isEmailValid(loginEmail) && loginPassword.length() >= 4)
         {
-            new CheckForRegistration().execute("http://192.168.0.185/AndroidApps/GoDelivery/UsersDetails/EmailsPasswords/EmailsPasswordsList.txt");
+            new CheckForRegistration().execute("http://www.lushapps.com/AndroidApps/GoDelivery/UsersDetails/EmailsPasswords/EmailsPasswordsList.txt");
 
         }
         else if (!isEmailValid(loginEmail))

@@ -132,7 +132,7 @@ public class PreJobPhotoEmployerActivity extends Activity {
         jobFileName = (JobID + ".txt");
 
 
-        new FetchAcceptedJobDetails().execute("http://192.168.0.185/AndroidApps/GoDelivery/AcceptedJobs/" + jobFileName);
+        new FetchAcceptedJobDetails().execute("http://www.lushapps.com/AndroidApps/GoDelivery/AcceptedJobs/" + jobFileName);
 
 
 
@@ -245,8 +245,8 @@ public class PreJobPhotoEmployerActivity extends Activity {
 
 
 
-        jobSeekerNameTextView.setText("Job Seeker Name\n" + jobDetails[3]);
-        jobSeekerContactNoTextView.setText("Job Seeker Contact Number\n" + jobDetails[6]);
+        jobSeekerNameTextView.setText("Worker Name\n" + jobDetails[3]);
+        jobSeekerContactNoTextView.setText("Worker Contact Number\n" + jobDetails[6]);
 
 
         pickUpAddressTextView.setText("Pick Up Address\n" + jobDetails[14]);
@@ -287,7 +287,7 @@ public class PreJobPhotoEmployerActivity extends Activity {
     public void startJobPrePhotoCreaterButton(View v) {
 
         // Toast.makeText(getApplicationContext(), "Olambaaa", Toast.LENGTH_SHORT).show();
-        new SignUpFormSubmission().execute("http://192.168.0.185/AndroidApps/GoDelivery/JobsStatus/AcceptedJobsStatus.php");
+        new SignUpFormSubmission().execute("http://www.lushapps.com/AndroidApps/GoDelivery/JobsStatus/AcceptedJobsStatus.php");
 
     }
 
@@ -545,7 +545,7 @@ public class PreJobPhotoEmployerActivity extends Activity {
 
                 jobDetailsButton.setVisibility(View.VISIBLE);
 
-                new RetrievePreJobPhotoFromServer().execute("http://192.168.0.185/AndroidApps/GoDelivery/PreJobPhotos/" + JobID + "-PrePhoto.jpg");
+                new RetrievePreJobPhotoFromServer().execute("http://www.lushapps.com/AndroidApps/GoDelivery/PreJobPhotos/" + JobID + "-PrePhoto.jpg");
 
             }
 
